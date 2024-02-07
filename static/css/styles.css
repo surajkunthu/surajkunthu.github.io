@@ -1,0 +1,9 @@
+img{
+    width: 250px;
+}
+.headerSection{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
