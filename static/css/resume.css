@@ -1,0 +1,36 @@
+html,
+body {
+  /* background-color: #212529; */
+  /* color: white; */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  justify-content: center;
+}
+
+#resumeContainer {
+  box-shadow: 1px 0px 5px 1px black;
+  /* border: #212529 1px; */
+  /* height: 50px; */
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+#titleContainer {
+  font-size: xx-large;
+  width: auto;
+}
+
+#workExperienceContainer {
+  width: auto;
+}
+
+#experienceContainer:hover {
+  transition: 0.2s ease-in-out all;
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem black;
+}
