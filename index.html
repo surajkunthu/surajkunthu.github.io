@@ -5,128 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suraj's Page</title>
     <link rel="stylesheet" href="static/css/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://surajkunthu.github.io/">Home</a>
-        <a class="navbar-brand" href="https://github.com/surajkunthu/"
-          >GitHub</a
-        >
-        <a class="navbar-brand" href="/subpages/resume.html">Resume</a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul> -->
-        <!-- <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+    <div class="container">
+      <h1>Suraj Kunthu's Profile Page</h1>
+      <h2><a href="./subpages/resume.html">Resume</a></h2>
+      <section class="headerSection">
+        <section class="introSection">
+          <div id="profile-div">
+            <img
+              src="static/img/profilePic.png"
+              alt="Suraj Profile Pic"
+              id="profile-pic"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form> -->
-        <!-- </div> -->
-      </div>
-    </nav>
+          </div>
 
-    <h1>Suraj Kunthu's Profile Page</h1>
-
-    <section class="headerSection">
-      <section class="introSection">
-        <div id="profile-div">
-          <img
-            src="static/img/profilePic.png"
-            alt="Suraj Profile Pic"
-            id="profile-pic"
-          />
-        </div>
-
-        <div id="intro-div">
-          <p>
-            I'm a Software Engineer currently working at Capital One in
-            Richmond, VA. I enjoy developing software tools and applications and
-            I have an interest in building Machine Learning algorithms and
-            Artificial Intelligence programs. I'm also pursuing a Masters Degree
-            at The University of Virginia to further my data science skills.
-          </p>
-        </div>
-      </section>
-      <section id="education-section">
-        <h3>📚 Education</h3>
-        <ul>
-          <li>
-            M.S. in Data Science at
-            <a href="https://www.virginia.edu/">The University of Virginia</a>,
-            <a href="https://datascience.virginia.edu/"
-              >School of Data Science</a
-            >
-          </li>
+          <div id="intro-div">
+            <p>
+              I'm a Software Engineer at Capital One in Richmond, VA. I enjoy
+              developing software tools and applications and I have an interest
+              in building Machine Learning algorithms and Artificial
+              Intelligence programs. I currently hold a MS in Data Science from
+              the University of Virginia, School of Data Science, and a BS in
+              Mechanical Engineering from Virginia Commonwealth University,
+              College of Engineering.
+            </p>
+          </div>
+        </section>
+        <section id="education-section">
+          <h3>🎓 Education</h3>
           <ul>
-            <li><i>In progress</i>, expected graduation May 2024</li>
+            <li>
+              M.S. in Data Science at
+              <a href="https://www.virginia.edu/">The University of Virginia</a
+              >,
+              <a href="https://datascience.virginia.edu/"
+                >School of Data Science</a
+              >
+            </li>
+            <ul>
+              <li>Graduated May 2024</li>
+            </ul>
+            <li>
+              B.S. in Mechanical Engineering at
+              <a href="https://www.vcu.edu">Virginia Commonwealth University</a
+              >,
+              <a href="https://egr.vcu.edu/departments/mechanical/"
+                >College of Engineering</a
+              >
+            </li>
+            <ul>
+              <li>Minors in Mathematics, Physics, Statistics</li>
+              <li>Graduated May 2020</li>
+            </ul>
           </ul>
-          <li>
-            B.S. in Mechanical Engineering at
-            <a href="https://www.vcu.edu">Virginia Commonwealth University</a>,
-            <a href="https://egr.vcu.edu/departments/mechanical/"
-              >College of Engineering</a
-            >
-          </li>
-          <ul>
-            <li>Minors in Mathematics, Physics, Statistics</li>
-            <li>Graduated May 2020</li>
-          </ul>
-        </ul>
-      </section>
+        </section>
 
-      <section id="job-section">
         <h3>💼 Work Experience</h3>
         <table>
           <thead>
@@ -141,38 +75,38 @@
               <td>Software Engineer</td>
               <td>
                 <img
-                  src="https://camo.githubusercontent.com/d10d81e1cf52df80023ae4b3096fb35969cd08a163ff5f2c2757177399038e58/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f392f39382f4361706974616c5f4f6e655f6c6f676f2e7376672f36343070782d4361706974616c5f4f6e655f6c6f676f2e7376672e706e67"
+                  align="left"
                   alt="capitalOne"
-                  width="30"
-                  height="11"
-                  id="jobImg"
-                />Capital One
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Capital_One_logo.svg/640px-Capital_One_logo.svg.png"
+                />
+                Capital One
               </td>
-              <td>August 2023 - Present</td>
+              <td>August 2023 - <em>Present</em></td>
             </tr>
             <tr>
               <td>Student Admissions Ambassador</td>
               <td>
                 <img
-                  src="https://camo.githubusercontent.com/baae915ca87ed23e1ff383bd6213a56ddfcc1f9e10ab1957a0717e6df2eff8d1/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f642f64352f556e69766572736974795f6f665f56697267696e69615f5363686f6f6c5f6f665f446174615f536369656e63655f6c6f676f2e737667"
+                  align="left"
                   alt="uva"
-                  width="30"
-                  height="23"
-                  id="jobImg"
-                />UVA School of Data Science
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/University_of_Virginia_School_of_Data_Science_logo.svg"
+                />
+                UVA School of Data Science
               </td>
-              <td>August 2022 - Present</td>
+              <td>August 2022 - May 2024</td>
             </tr>
             <tr>
               <td>Process Engineer</td>
               <td>
                 <img
-                  src="https://camo.githubusercontent.com/627980ce282cf845036e7435f37919afc54aecab6d52194d55dd55fb007fbad5/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f652f65352f4475506f6e745f64655f4e656d6f7572735f6c6f676f2e737667"
+                  align="left"
                   alt="dupont"
-                  width="30"
-                  height="9"
-                  id="jobImg"
-                />DuPont
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e5/DuPont_de_Nemours_logo.svg"
+                />
+                DuPont
               </td>
               <td>September 2021 - July 2023</td>
             </tr>
@@ -180,12 +114,12 @@
               <td>Quality Engineer</td>
               <td>
                 <img
-                  src="https://camo.githubusercontent.com/627980ce282cf845036e7435f37919afc54aecab6d52194d55dd55fb007fbad5/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f652f65352f4475506f6e745f64655f4e656d6f7572735f6c6f676f2e737667"
+                  align="left"
                   alt="dupont"
-                  width="30"
-                  height="9"
-                  id="jobImg"
-                />DuPont
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e5/DuPont_de_Nemours_logo.svg"
+                />
+                DuPont
               </td>
               <td>June 2020 - August 2021</td>
             </tr>
@@ -193,12 +127,12 @@
               <td>Facilities Asset Engineer Intern</td>
               <td>
                 <img
-                  src="https://camo.githubusercontent.com/35909dbcc16ff49211759c10a8cc21df9d8573ae513edd58106a3ad655e43cf6/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f382f38632f5643555f74797065666163652e737667"
+                  align="left"
                   alt="vcu"
-                  width="30"
-                  height="11"
-                  id="jobImg"
-                />Virginia Commonwealth University
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8c/VCU_typeface.svg"
+                />
+                Virginia Commonwealth University
               </td>
               <td>August 2019 - May 2020</td>
             </tr>
@@ -206,12 +140,12 @@
               <td>Supply Chain Intern</td>
               <td>
                 <img
-                  src="https://cdn.freebiesupply.com/logos/large/2x/pepsico-logo-png-transparent.png"
+                  align="left"
                   alt="pepsico"
-                  width="30"
-                  height="40"
-                  id="jobImg"
-                />PepsiCo, Inc.
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Pepsico_logo.svg"
+                />
+                PepsiCo, Inc.
               </td>
               <td>June 2019 - August 2019</td>
             </tr>
@@ -219,28 +153,76 @@
               <td>Facilities Asset Engineer Intern</td>
               <td>
                 <img
-                  src="https://camo.githubusercontent.com/35909dbcc16ff49211759c10a8cc21df9d8573ae513edd58106a3ad655e43cf6/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f382f38632f5643555f74797065666163652e737667"
+                  align="left"
                   alt="vcu"
-                  width="30"
-                  height="11"
-                  id="jobImg"
-                />Virginia Commonwealth University
+                  width="30px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8c/VCU_typeface.svg"
+                />
+                Virginia Commonwealth University
               </td>
               <td>May 2018 - May 2019</td>
             </tr>
           </tbody>
         </table>
+
+        <h3>🏅 Certifications</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Issuing Organization</th>
+              <th>Date(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Production Readiness, Reliability Engineer</td>
+              <td>Capital One</td>
+              <td>Obtained: August 2024, Expires: August 2025</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://www.credly.com/badges/b5da160c-2d12-47b7-820e-4ea94528a74d/linked_in?t=sgcrl3"
+                  >AWS Certified Solutions Architect, Associate</a
+                >
+              </td>
+              <td>Amazon</td>
+              <td>Obtained: July 2024, Expires: July 2027</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://drive.google.com/file/d/1JQGz13PWnDueF8Pmm6eKtW_zs1Nmd3nx/view?usp=drivesdk"
+                  >Certified Secure Software Engineer (CSSE), Associate</a
+                >
+              </td>
+              <td>Capital One</td>
+              <td>Obtained: October 2023</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://drive.google.com/file/d/1Ki4IV2kQsJsfJ78DgoGZj8ey6s7xAohs/view?usp=sharing"
+                  >Certified Lean Practitioner</a
+                >
+              </td>
+              <td>DuPont</td>
+              <td>Obtained: September 2022</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://drive.google.com/file/d/19QWi3pIfKm3VFFHQCwfaYdk4ML0htY2d/view?usp=sharing"
+                  >Certified Lean Six Sigma, Green Belt</a
+                >
+              </td>
+              <td>DuPont</td>
+              <td>Obtained: August 2022</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
-    </section>
-
-    <div class="container">
-      <a>hi</a>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

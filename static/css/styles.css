@@ -1,14 +1,10 @@
 html,
 body {
-  background-color: #212529;
-  color: white;
+  background-color: #c0d7bb;
+  color: #2f4b26;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.bg-body-tertiary {
-  background-color: #5c27ab !important;
 }
 
 #profile-pic {
@@ -22,12 +18,22 @@ body {
   box-shadow: 0 0 1rem white;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .headerSection {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  background-color: #4f5861;
+  background-color: #85bda6;
   border-radius: 1rem;
+  max-width: 80%;
+  justify-content: center;
+  padding: 10px;
 }
 
 .introSection {
@@ -41,20 +47,17 @@ body {
 }
 
 #intro-div {
-  margin-left: 30px;
+  float: right;
 }
 
-#education-section {
-  margin-left: 30px;
-}
-
-#job-section {
-  margin-bottom: 30px;
-  margin-left: 30px;
-}
-
-#jobImg {
-  width: auto;
-  margin-left: 10px;
-  margin-right: 10px;
+/* ------------mobile--------------  */
+@media only screen and (max-width: 480px) {
+  .headerSection {
+    box-shadow: -10px 10px 30px #9f9f9f;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 95%;
+  }
 }
