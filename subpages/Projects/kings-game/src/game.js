@@ -53,17 +53,16 @@ const cardCode = [
   "127198", // K, Club
 ];
 
+let cardsInDeck = 52;
+let cardCounter = 0;
+// const canOpenProbability = Math.ran;
+
 const pickCard = document.getElementById("cardPick");
 const pickedCard = document.getElementById("pickedCard");
 
 pickCard.addEventListener("click", async (e) => {
   e.preventDefault();
   let card = getRandomItem(cardCode);
-  //   if (card >= 127153 && card <= 127182) {
-  //     pickedCard.style = "color: red";
-  //   } else {
-  //     pickedCard.style = "color: black";
-  //   }
   pickedCard.style.color = card >= 127153 && card <= 127182 ? "red" : "black";
   pickedCard.innerHTML = `&#${card}`;
 });
@@ -71,6 +70,18 @@ pickCard.addEventListener("click", async (e) => {
 function getRandomItem(arr) {
   // Generate a random index within the array's bounds
   const randomIndex = Math.floor(Math.random() * arr.length);
-  // Return the element at the random index
-  return arr[randomIndex];
+  // call canOpen()
+  console.log(canOpen());
+  if (canOpen() == 1) {
+    console.log("CAN OPENED");
+  } else {
+    // Return the element at the random index
+    return arr[randomIndex];
+  }
+}
+
+function canOpen() {
+  // Increase cardCounter by 1;
+  cardCounter++;
+  return cardCounter / cardsInDeck;
 }

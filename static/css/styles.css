@@ -50,6 +50,52 @@ body {
   float: right;
 }
 
+.navbar {
+  border-radius: 1rem;
+  max-width: 80%;
+  background-color: #85bda6;
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #2f4b26;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #848484;
+  transition: 0.2s ease-in-out all;
+}
+
+ul.custom-list {
+  list-style-type: none;
+  padding: 0;
+  min-width: 70%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.custom-list li {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+ul.custom-list a {
+  color: #333;
+  text-decoration: none;
+}
+ul.custom-list li:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /* ------------mobile--------------  */
 @media only screen and (max-width: 480px) {
   .headerSection {
