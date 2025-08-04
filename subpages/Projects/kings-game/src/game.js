@@ -53,16 +53,22 @@ const cardCode = [
   "127198", // K, Club
 ];
 
+let pickedCards = [];
 let cardsInDeck = 52;
 let cardCounter = 0;
 // const canOpenProbability = Math.ran;
 
 const pickCard = document.getElementById("cardPick");
 const pickedCard = document.getElementById("pickedCard");
+const canOpenSound = new Audio("./media/open-soda-can.mp3");
+const beerCan = document.getElementById("can");
 
 pickCard.addEventListener("click", async (e) => {
   e.preventDefault();
   let card = getRandomItem(cardCode);
+  if (pickedCards.includes(card)) {
+    card = getRandomItem(cardCode);
+  }
   pickedCard.style.color = card >= 127153 && card <= 127182 ? "red" : "black";
   pickedCard.innerHTML = `&#${card}`;
 });
@@ -72,11 +78,17 @@ function getRandomItem(arr) {
   const randomIndex = Math.floor(Math.random() * arr.length);
   // call canOpen()
   console.log(canOpen());
-  if (canOpen() == 1) {
+  if (canOpen() > 0.25) {
+    playSound();
+    beerCan.src = "./static/openCan.jpg";
     console.log("CAN OPENED");
+    return "127199";
   } else {
     // Return the element at the random index
-    return arr[randomIndex];
+    let randomCard = arr[randomIndex];
+    pickedCards.push(randomCard);
+    console.log(pickedCards);
+    return randomCard;
   }
 }
 
@@ -84,4 +96,8 @@ function canOpen() {
   // Increase cardCounter by 1;
   cardCounter++;
   return cardCounter / cardsInDeck;
+}
+
+function playSound() {
+  canOpenSound.play();
 }

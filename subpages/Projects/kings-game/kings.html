@@ -9,10 +9,15 @@
   <body>
     <section id="gameSection">
       Kings
+
       <hr style="width: 100%" />
-      <div id="pickedCard"></div>
-      <div><img id='can' src="./static/coors.png"/></div>
-      <button id="cardPick" type="submit">Pick a Card</a>
+      <div id="gameControls">
+        <button id="cardPick" type="submit">Pick a Card</button>
+      </div>
+      <div id="playArea">
+        <div id="pickedCard"></div>
+        <div><img id="can" src="./static/coors.png" /></div>
+      </div>
     </section>
     <script type="module" src="./src/game.js"></script>
   </body>

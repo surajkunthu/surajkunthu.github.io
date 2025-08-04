@@ -15,8 +15,10 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   width: 100%;
+  min-width: 200px;
 }
 
 #pickedCard {
@@ -25,4 +27,15 @@ body {
 
 #can {
   max-height: 300px;
+}
+
+#playArea {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 200px;
+}
+
+#gameControls {
+  padding: 20px;
 }
