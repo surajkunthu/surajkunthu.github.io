@@ -1,46 +1,15 @@
 html,
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Monaco";
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #222831;
 }
 
-.back-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #8db6d2;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #2980b9;
-}
-
-.download-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #8dd297;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.download-button:hover {
-  background-color: #07bc6e;
+.navbar {
+  min-width: 100%;
 }
 
 #navBar-resume {
@@ -53,12 +22,15 @@ a {
 }
 
 #resumeContainer {
-  box-shadow: -10px 10px 30px #9f9f9f;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding: 25px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 60%;
+  background-color: white;
 }
 
 #titleContainer {
@@ -83,12 +55,6 @@ img {
   margin-bottom: 5px;
   vertical-align: middle;
 }
-
-/* #experienceContainer:hover {
-  transition: 0.2s ease-in-out all;
-  transform: scale(1.05);
-  box-shadow: -10px 10px 30px #9f9f9f;
-} */
 
 /* ------------mobile--------------  */
 @media only screen and (max-width: 480px) {
